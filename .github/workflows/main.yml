@@ -31,4 +31,7 @@ jobs:
         run: |
           time=$(date "+%Y%m%d")
           echo $time
-          git tag $time
+          tag="test"$time
+          git tag $tag
+          git push origin $tag
+          git tag
