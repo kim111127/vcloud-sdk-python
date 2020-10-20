@@ -1,0 +1,16 @@
+name: ttvcloud regression test
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  name: regression-job
+  runs-on: macOS-10.14
+  steps:
+    name: create tag
+    run:
+      echo $ENV
+
+
+
